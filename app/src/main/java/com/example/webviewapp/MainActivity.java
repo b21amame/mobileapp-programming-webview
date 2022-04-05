@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void showInternalWebPage(){
         // TODO: Add your code for showing internal web page here
+    MyWebView.loadUrl("file:///android_asset/LILLAMB.html");
+
     }
 
     @Override
@@ -103,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.action_internal_web) {
             Log.d("==>","Will display internal web page");
+            showInternalWebPage();
             return true;
         }
 
