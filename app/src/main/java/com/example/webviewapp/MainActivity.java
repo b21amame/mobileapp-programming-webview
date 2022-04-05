@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         MyWebView.setWebViewClient(myWebViewClient);
         MyWebView.getSettings().setJavaScriptEnabled(true);
 
-      showExternalWebPage();
+
 
         /*
         * Rename your App. Tip: Values->Strings
@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_external_web) {
             Log.d("==>","Will display external web page");
+            showExternalWebPage();
             return true;
         }
 
