@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void showExternalWebPage(){
         // TODO: Add your code for showing external web page here
+        MyWebView.loadUrl("https://student.his.se");
+
     }
 
     public void showInternalWebPage(){
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         MyWebView.setWebViewClient(myWebViewClient);
         MyWebView.getSettings().setJavaScriptEnabled(true);
 
-        showExternalPage();
+      showExternalWebPage();
 
         /*
         * Rename your App. Tip: Values->Strings
@@ -78,16 +80,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void showExternalPage() {
-        // först lägger vi till ett webview elemet
-       // WebView webView = new WebView (this);
 
-        // vi gör sedan element till aktivt
-
-        MyWebView.loadUrl("https://student.his.se");
-// ladda en sida på vår webview
-
-    }
 
 
 
